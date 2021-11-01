@@ -1,5 +1,6 @@
 package com.xworkz.dto.examples;
 
+
 public class BlueToothDTO {
 	private String brand;
 	private String type;
