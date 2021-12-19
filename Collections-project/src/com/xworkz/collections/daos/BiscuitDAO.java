@@ -24,7 +24,7 @@ public class BiscuitDAO {
 	 Iterator<String> itr=biscuitdaos.iterator();
 	 while(itr.hasNext())
 	 {
-	String element=(String)itr.next();
+	String element=itr.next();
 	if(search.evaluate(element,value))
 	{
 		return true;
