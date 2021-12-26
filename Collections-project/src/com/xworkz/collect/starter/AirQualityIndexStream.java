@@ -12,6 +12,8 @@ public class AirQualityIndexStream {
 		List<Integer> tempAirQualityStream=airQuality.filter((e)->e<100).sorted((e1,e2)->e2.compareTo(e1)).collect(Collectors.toList());
 		
 		tempAirQualityStream.forEach((e)->System.out.println(e));
+		
+		
 	}
 
 }
