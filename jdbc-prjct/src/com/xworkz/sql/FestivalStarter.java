@@ -17,10 +17,10 @@ public class FestivalStarter {
 		FestivalDTO dto7=new FestivalDTO(8,"Gudi Padva",27,"Maharashtra");
 		FestivalDTO dto8=new FestivalDTO(9,"Rath Yara",8,"Odhisha");
 		FestivalDTO dto9=new FestivalDTO(10,"Pongal",27,"Tamil Nadu");
-		
+		FestivalDTO dto10=new FestivalDTO(11,"Pongal",27,"Tamil Nadu");
 		FestivalDAO dao=new FestivalDAO();
 		
-		dao.save(dto);
+	    dao.save(dto);
 		dao.save(dto1);
 		dao.save(dto2);
 		dao.save(dto3);
@@ -30,11 +30,13 @@ public class FestivalStarter {
 		dao.save(dto7);
 		dao.save(dto8);
 		dao.save(dto9);
+		dao.save(dto10);
 		
-		dao.deleteOperation(9);
+		dao.deleteOperation(11);
 		
-		
-		
+		dao.readOperationById(5);
+		dao.displayAll();
+		dao.displayAll();
 
 	}
 

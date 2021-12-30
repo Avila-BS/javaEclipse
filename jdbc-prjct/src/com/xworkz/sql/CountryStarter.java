@@ -14,6 +14,9 @@ public class CountryStarter {
 	CountryDTO dto5=new CountryDTO(5,"Vatican",379,"Europe");
 	CountryDTO dto6=new CountryDTO(6,"Tasmania",3,"Australia");
 	CountryDTO dto7=new CountryDTO(7,"China",86,"Asia");
+	CountryDTO dto8=new CountryDTO(8,"SRI LANKA",95,"Asia");
+	CountryDTO dto9=new CountryDTO(9,"IRAN",97,"Asia");
+	
 	
 	CountryDAO dao=new CountryDAO();
 	dao.save(dto1);
@@ -23,9 +26,16 @@ public class CountryStarter {
 	dao.save(dto5);
 	dao.save(dto6);
 	dao.save(dto7);
+	dao.save(dto8);
+	dao.save(dto9);
 	
-	dao.deleteOperation(5);
+	dao.deleteOperation(3);
 	
+	dao.readOperationById(8);
+	
+	dao.displayAll();
+	
+	dao.displayTotalRows();
 
 	}
 

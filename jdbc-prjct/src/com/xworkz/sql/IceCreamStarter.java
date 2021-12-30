@@ -13,6 +13,7 @@ public class IceCreamStarter {
 		IceCreamDTO dto4=new IceCreamDTO(4,"Kwality Walls","Black Current",165.00f);
 		IceCreamDTO dto5=new IceCreamDTO(5,"Cornetto","Caramel",133.00f);
 		IceCreamDTO dto6=new IceCreamDTO(6,"NOTO","Oreo",120.00f);
+		IceCreamDTO dto7=new IceCreamDTO(7,"Kwality Walls","Black Current",165.00f);
 		
 		IceCreamDAO dao=new IceCreamDAO();
 		
@@ -22,8 +23,14 @@ public class IceCreamStarter {
 		dao.save(dto4);
 		dao.save(dto5);
 		dao.save(dto6);
+		dao.save(dto7);
 		
-		dao.deleteOperation(6);
+		dao.deleteOperation(7);
+		
+		dao.readOperationById(2);
+		
+		dao.displayAll();
+		dao.displayTotalRows();
 		
 		
 		

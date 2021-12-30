@@ -14,6 +14,7 @@ public class CityStarter {
 		CityDTO dto5=new CityDTO(5,"Mumbai",124536,"Gateway of India");
 		CityDTO dto6=new CityDTO(6,"Nagpur",52657,"Orange city");
 		CityDTO dto7=new CityDTO(7,"Yavatmal",72376,"Cotton");
+		CityDTO dto8=new CityDTO(8,"Yavatmal",72376,"Cotton");
 		
 		CityDAO dao=new CityDAO();
 		dao.save(dto1);
@@ -23,8 +24,12 @@ public class CityStarter {
 		dao.save(dto5);
 		dao.save(dto6);
 		dao.save(dto7);
+		dao.save(dto8);
 		
-		dao.deleteOperation(4);
+		dao.deleteOperation(8);
+		dao.readOperationById(3);
+		dao.displayAll();
+		dao.displayTotalRows();
 		
 
 	}

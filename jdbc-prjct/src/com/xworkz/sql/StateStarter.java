@@ -12,6 +12,7 @@ public class StateStarter {
 		StateDTO dto3=new StateDTO(3,"Tamil Nadu",44,"Chennai");
 		StateDTO dto4=new StateDTO(4,"Punjab",147,"Chandigarh");
 		StateDTO dto5=new StateDTO(5,"Jharkhand",92,"Ranchi");
+		StateDTO dto6=new StateDTO(6,"Madhya Pradesh",48,"Bhopal");
 		
 		StateDAO dao =new StateDAO();
 		
@@ -20,9 +21,15 @@ public class StateStarter {
 		dao.save(dto3);
 		dao.save(dto4);
 		dao.save(dto5);
+		dao.save(dto6);
 
 		
-		dao.deleteOperation(1);
+		dao.deleteOperation(6);
+		dao.readOperationById(2);
+		
+		dao.displayAll();
+		
+		dao.displayTotalRows();
 	}
 
 }
