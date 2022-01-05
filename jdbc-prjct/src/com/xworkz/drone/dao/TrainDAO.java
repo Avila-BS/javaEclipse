@@ -163,7 +163,7 @@ public Collection<TrainDTO> getAll()
 	
 	mysql=DBUtil.createConnection();
 	Collection<TrainDTO> details=new ArrayList<TrainDTO>();
-	TrainDTO dtoo=new TrainDTO();
+	//TrainDTO dtoo=new TrainDTO();
 	
 	
 	try {
@@ -175,6 +175,7 @@ public Collection<TrainDTO> getAll()
 		while(result.next())
 		{
 			
+			TrainDTO dtoo=new TrainDTO();
 			int train_id=result.getInt(1);
 			String train_no=result.getString(2);
 			String boarding=result.getString(3);
